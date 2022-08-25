@@ -10,9 +10,9 @@ package Factory.example2;
 public class Test {
     public static void main(String[] args) {
         ShapeFactory shapeFactory = ShapeFactory.getInstance();
-        Shape circle = shapeFactory.getShapeWithName("circle");
-        Shape square = shapeFactory.getShapeWithName("square");
-        Shape rectangle = shapeFactory.getShapeWithName("rectangle");
+        Shape circle = shapeFactory.getShape("circle");
+        Shape square = shapeFactory.getShape("square");
+        Shape rectangle = shapeFactory.getShape("rectangle");
         circle.draw();
         square.draw();
         rectangle.draw();

@@ -1,5 +1,7 @@
 package Factory.example2;
 
+import AbstractFactory.AbstarctFactory;
+
 /**
  * @ClassName ShapeFactory
  * @description: 生产形状类的工厂，工厂为单例
@@ -7,7 +9,7 @@ package Factory.example2;
  * @create: 2022-08-25 22:12
  * @Version 1.0
  **/
-public class ShapeFactory {
+public class ShapeFactory extends AbstarctFactory {
     private static ShapeFactory singleton = new ShapeFactory();
     private ShapeFactory() {
         System.out.println("形状工厂构造完成");
@@ -16,7 +18,8 @@ public class ShapeFactory {
         return singleton;
     }
 
-    public Shape getShapeWithName(String name) {
+    @Override
+    public Shape getShape(String name) {
         if (name == null || "".equals(name)) {
             return null;
         } else if ("circle".equalsIgnoreCase(name)) {
