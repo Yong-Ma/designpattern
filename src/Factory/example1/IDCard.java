@@ -1,5 +1,5 @@
-package Factory.idcard;
-import Factory.framework.Product;
+package Factory.example1;
+import Factory.example1.Product;
 
 public class IDCard extends Product {
     private Integer number;

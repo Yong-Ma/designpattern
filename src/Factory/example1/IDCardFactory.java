@@ -1,6 +1,4 @@
-package Factory.idcard;
-import Factory.framework.Product;
-import Factory.framework.Factory;
+package Factory.example1;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

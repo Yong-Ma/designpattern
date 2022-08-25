@@ -1,4 +1,4 @@
-package Factory.framework;
+package Factory.example1;
 
 public abstract class Factory {
     public final Product create(String owner) {

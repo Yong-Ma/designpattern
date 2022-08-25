@@ -1,8 +1,8 @@
-package Factory;
+package Factory.example1;
 
-import Factory.framework.Factory;
-import Factory.framework.Product;
-import Factory.idcard.IDCardFactory;
+import Factory.example1.Factory;
+import Factory.example1.Product;
+import Factory.example1.IDCardFactory;
 
 public class Main {
     public static void main(String[] args) {
