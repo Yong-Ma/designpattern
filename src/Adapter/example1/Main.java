@@ -1,4 +1,4 @@
-package Adapter;
+package Adapter.example1;
 
 import java.io.*;
 
