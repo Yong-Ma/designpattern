@@ -1,9 +1,10 @@
 package Flyweight;
 
-import java.util.HashMap;
- 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
 public class ShapeFactory {
-   private static final HashMap<String, Shape> circleMap = new HashMap<>();
+   private static final Map<String, Shape> circleMap = new ConcurrentHashMap<>();
  
    public static Shape getCircle(String color) {
       Circle circle = (Circle)circleMap.get(color);
